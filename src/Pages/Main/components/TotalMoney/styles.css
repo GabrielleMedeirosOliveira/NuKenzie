@@ -1,0 +1,27 @@
+@import url(../../styles.css);
+
+.total-money {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  max-width: 500px;
+  min-width: 300px;
+  width: 90vw;
+  height: 68px;
+  background-color: var(--grey-4);
+  border-radius: 5px;
+}
+
+.total-money p {
+  color: #fff;
+  font: bold 16px "Nunito Sans", sans-serif;
+  /* font: var(--fontsize-title3); */
+}
+
+@media screen and (min-width: 1024px) {
+  .total-money {
+    max-width: none;
+    width: 363px;
+  }
+}
