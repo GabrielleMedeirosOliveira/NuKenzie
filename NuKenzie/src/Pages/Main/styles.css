@@ -1,0 +1,57 @@
+:root {
+  /* PRIMARY PALETTE */
+  --color-primary: #fd377e;
+  --color-primary-2: #e34981;
+  --color-secondary: #03b898;
+
+  /* GReY SCALE PALETTE */
+  --grey-4: #212529;
+  --grey-3: #868e96;
+  --grey-2: #e9ecef;
+  --grey-1: #f8f9fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.Main {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 34px;
+}
+
+button {
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--grey-2);
+  color: var(--grey-3);
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 150px;
+  }
+}
